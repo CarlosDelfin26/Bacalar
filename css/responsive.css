@@ -1,0 +1,949 @@
+﻿/* ==========================================================================
+   BACALAR TOURISM â€” RESPONSIVE.CSS
+   Reglas de adaptaciÃ³n para Desktop, Tablet y MÃ³vil
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TABLET (Viewport < 1200px y >= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .hero-section,
+  .hero-content {
+    min-height: 100vh;
+    min-height: 800px;
+  }
+
+  .hero-top-bar {
+    padding-top: 24px;
+  }
+
+  .hero-logo-upb {
+    width: 95px;
+    max-height: 85px;
+  }
+
+  .hero-divider {
+    height: 50px;
+  }
+
+  .hero-logo-pm {
+    width: 85px;
+    max-height: 80px;
+  }
+
+  .hero-main-logo {
+    max-width: 520px;
+  }
+
+  .hero-bottom-action {
+    padding-bottom: 48px;
+  }
+
+  /* Secondary Nav en Tablet */
+  .secondary-nav-container {
+    height: 68px;
+  }
+
+  .secondary-nav-list {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .nav-link-sec {
+    padding: 12px 4px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. MÃ“VIL ESTÃNDAR (Viewport < 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .hero-section,
+  .hero-content {
+    min-height: 100svh;
+    min-height: 600px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .hero-brand-group {
+    gap: 8px;
+  }
+
+  .hero-logo-upb {
+    width: 68px;
+    max-height: 62px;
+  }
+
+  .hero-divider {
+    height: 36px;
+    width: 8px;
+  }
+
+  .hero-logo-pm {
+    width: 62px;
+    max-height: 56px;
+  }
+
+  .hero-center-brand {
+    padding: 20px 0;
+  }
+
+  .hero-main-logo {
+    width: 100%;
+    max-width: 290px;
+    max-height: 200px;
+  }
+
+  .hero-bottom-action {
+    padding-bottom: 24px;
+  }
+
+  .btn-hero-cta {
+    height: 48px;
+    padding: 0 20px;
+    font-size: 11px;
+    gap: 12px;
+  }
+
+  /* Secondary Nav en MÃ³vil */
+  .secondary-nav-container {
+    height: 58px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .secondary-nav-list {
+    justify-content: flex-start;
+    gap: 18px;
+  }
+
+  .nav-link-sec {
+    font-size: 10.5px;
+    padding: 10px 2px;
+  }
+
+  .nav-link-sec.active::after {
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. MÃ“VIL PEQUEÃ‘O (Viewport < 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 379.98px) {
+  .hero-logo-upb {
+    width: 58px;
+    max-height: 52px;
+  }
+
+  .hero-divider {
+    height: 30px;
+  }
+
+  .hero-logo-pm {
+    width: 52px;
+    max-height: 48px;
+  }
+
+  .hero-main-logo {
+    max-width: 250px;
+    max-height: 175px;
+  }
+
+  .btn-hero-cta {
+    padding: 0 16px;
+    font-size: 10px;
+  }
+
+  .secondary-nav-list {
+    gap: 14px;
+  }
+
+  .nav-link-sec {
+    font-size: 10px;
+  }
+}
+
+/* ==========================================================================
+   SECCIONES 3 A 10 â€” AJUSTES RESPONSIVE
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLET ANCHA / ESCRITORIO PEQUEÃ‘O (< 1200px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .section-shell {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .gallery-section,
+  .nature-section,
+  .culture-section,
+  .experiences-section,
+  .monuments-section,
+  .guide-section {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .gallery-mosaic--primary {
+    height: 480px;
+  }
+
+  .gallery-stack {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .nature-intro {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+  }
+
+  .nature-visual {
+    grid-template-columns: 1fr 0.34fr;
+    height: 560px;
+  }
+
+  .nature-side {
+    grid-template-rows: 250fr 294fr;
+  }
+
+  .nature-copy .section-text {
+    font-size: 17px;
+  }
+
+  .culture-narrative {
+    grid-template-columns: 1fr 1.25fr;
+    gap: 48px;
+  }
+
+  .culture-photo {
+    height: 390px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 48px;
+  }
+
+  .guide-map {
+    width: 58%;
+    height: 320px;
+  }
+
+  .guide-photo {
+    width: 36%;
+    height: 170px;
+  }
+
+  .guide-banner {
+    margin-bottom: 56px;
+  }
+
+  .shopping-capsule-title {
+    font-size: 44px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET (< 992px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .section-title {
+    font-size: 52px;
+  }
+
+  .subsection-title {
+    font-size: 36px;
+  }
+
+  .subsection-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .subsection-text {
+    max-width: 520px;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .gallery-mosaic--primary {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 300px 160px;
+    height: 476px;
+    gap: 14px;
+  }
+
+  .gallery-figure--main {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 476px;
+  }
+
+  .gallery-stack {
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-rows: 1fr 1fr;
+    height: 300px;
+    gap: 14px;
+  }
+
+  .gallery-figure--side {
+    grid-column: 2;
+    grid-row: 2;
+    height: 160px;
+  }
+
+  .gallery-mosaic--secondary {
+    gap: 14px;
+  }
+
+  .gallery-card {
+    height: 300px;
+  }
+
+  .nature-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .nature-visual {
+    grid-template-columns: 1.7fr 1fr;
+    height: 520px;
+  }
+
+  .nature-main {
+    height: 520px;
+    min-height: 0;
+  }
+
+  .nature-side {
+    grid-template-rows: 240px 264px;
+    min-height: 0;
+  }
+
+  .nature-detail {
+    height: 240px;
+    min-height: 0;
+  }
+
+  .nature-teal-card {
+    height: 264px;
+    min-height: 0;
+    padding: 20px 18px;
+    gap: 12px;
+    overflow: hidden;
+  }
+
+  .nature-card-kicker {
+    font-size: 26px;
+  }
+
+  .nature-copy {
+    max-width: 100%;
+  }
+
+  .nature-copy .section-text {
+    max-width: 720px;
+  }
+
+  .cenote-card {
+    height: 380px;
+  }
+
+  .culture-narrative {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 64px;
+  }
+
+  .culture-copy {
+    max-width: 760px;
+  }
+
+  .culture-photo {
+    height: 420px;
+  }
+
+  .culture-quote {
+    max-width: 520px;
+  }
+
+  .festivity-card {
+    height: 300px;
+  }
+
+  .aquatic-card-media {
+    height: 260px;
+  }
+
+  .pueblos-grid,
+  .crafts-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .pueblo-card {
+    height: 420px;
+  }
+
+  .monuments-grid {
+    gap: 14px;
+  }
+
+  .monument-card-media {
+    height: 220px;
+  }
+
+  .monument-card-body {
+    padding: 22px;
+  }
+
+  .monument-card-body h3 {
+    font-size: 30px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .guide-copy {
+    max-width: 720px;
+  }
+
+  .guide-banner {
+    margin-bottom: 48px;
+  }
+
+  .guide-map-composition {
+    height: 360px;
+  }
+
+  .guide-map {
+    width: 58%;
+    height: 330px;
+  }
+
+  .guide-photo {
+    width: 36%;
+    height: 180px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .footer-action {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MÃ“VIL (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .section-shell {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gallery-section,
+  .nature-section,
+  .culture-section,
+  .experiences-section,
+  .monuments-section,
+  .guide-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  .section-eyebrow {
+    margin-bottom: 12px;
+    font-size: 10.5px;
+  }
+
+  .section-subtitle {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .section-text {
+    font-size: 15.5px;
+    line-height: 1.7;
+  }
+
+  .subsection-title {
+    font-size: 30px;
+  }
+
+  .subsection-heading {
+    margin-bottom: 24px;
+  }
+
+  .section-divider {
+    margin: 48px 0;
+  }
+
+  .gallery-mosaic--primary {
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px 220px 190px;
+    height: auto;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .gallery-figure--main {
+    grid-column: 1;
+    grid-row: 1;
+    height: 260px;
+  }
+
+  .gallery-stack {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 220px;
+    gap: 12px;
+  }
+
+  .gallery-figure--side {
+    grid-column: 1;
+    grid-row: 3;
+    height: 190px;
+  }
+
+  .gallery-mosaic--secondary {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gallery-card {
+    height: 250px;
+  }
+
+  .gallery-card .media-card-content h3 {
+    font-size: 28px;
+  }
+
+  .media-card-content {
+    padding: 24px;
+  }
+
+  .nature-visual {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+  }
+
+  .nature-main {
+    height: 300px;
+  }
+
+  .nature-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 12px;
+    height: auto;
+  }
+
+  .nature-detail {
+    height: 210px;
+  }
+
+  .nature-teal-card {
+    min-height: 210px;
+    padding: 20px;
+  }
+
+  .nature-card-kicker {
+    font-size: 24px;
+  }
+
+  .nature-copy .section-text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .cenote-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cenote-card {
+    height: 360px;
+  }
+
+  .cenote-card .media-card-content h3 {
+    font-size: 30px;
+  }
+
+  .culture-narrative {
+    margin-bottom: 48px;
+  }
+
+  .culture-photo {
+    height: 280px;
+  }
+
+  .culture-quote {
+    min-height: 0;
+    margin-top: 24px;
+    padding: 24px;
+  }
+
+  .culture-quote p {
+    font-size: 26px;
+  }
+
+  .festivity-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .festivity-card {
+    height: 280px;
+  }
+
+  .experience-block + .experience-block {
+    margin-top: 56px;
+  }
+
+  .aquatic-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .aquatic-card-media {
+    height: 250px;
+  }
+
+  .aquatic-card-body {
+    padding: 20px 22px 24px;
+  }
+
+  .aquatic-card-body h4 {
+    font-size: 28px;
+  }
+
+  .pueblos-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pueblo-card {
+    height: 360px;
+  }
+
+  .crafts-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .craft-card-media {
+    height: 220px;
+  }
+
+  .craft-card-body {
+    padding: 20px 22px 24px;
+  }
+
+  .shopping-banner {
+    min-height: 0;
+    padding: 20px 16px;
+  }
+
+  .shopping-capsule {
+    gap: 16px;
+    min-height: 104px;
+    padding: 16px 20px;
+    border-radius: 20px;
+  }
+
+  .shopping-capsule-kicker {
+    font-size: 9px;
+  }
+
+  .shopping-capsule-title {
+    font-size: 30px;
+  }
+
+  .shopping-capsule-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .monuments-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .monument-card-media {
+    height: 220px;
+  }
+
+  .monument-card-body {
+    padding: 22px;
+  }
+
+  .monument-card-body p {
+    flex: 0;
+  }
+
+  .guide-banner {
+    gap: 14px;
+    min-height: 104px;
+    margin-bottom: 36px;
+    padding: 16px 20px;
+    border-radius: 20px;
+  }
+
+  .glass-banner-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .glass-banner-title {
+    font-size: 30px;
+  }
+
+  .guide-title {
+    font-size: 38px;
+  }
+
+  .guide-copy .section-text {
+    font-size: 16px;
+  }
+
+  .guide-map-composition {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .guide-map {
+    position: relative;
+    width: 100%;
+    height: 260px;
+  }
+
+  .guide-photo {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 72%;
+    height: 160px;
+    margin: -36px 0 0 auto;
+    border-width: 4px;
+  }
+
+  .map-note {
+    margin-top: 18px;
+    font-size: 10px;
+  }
+
+  .site-footer {
+    min-height: 0;
+    padding: 56px 0 28px;
+  }
+
+  .footer-brand {
+    font-size: 56px;
+  }
+
+  .footer-tagline {
+    font-size: 24px;
+  }
+
+  .footer-lema {
+    font-size: 19px;
+  }
+
+  .footer-cta-text {
+    font-size: 22px;
+  }
+
+  .footer-divider {
+    margin: 36px 0 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-legal {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .site-modal .modal-dialog {
+    width: calc(100% - 24px);
+    margin: 12px auto;
+  }
+
+  .site-modal .modal-content,
+  .site-modal-grid {
+    max-height: calc(100vh - 24px);
+  }
+
+  .site-modal-grid {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .site-modal-media {
+    height: 220px;
+  }
+
+  .site-modal-content {
+    max-height: none;
+    padding: 28px 22px 32px;
+  }
+
+  .site-modal-content h2 {
+    font-size: 38px;
+  }
+
+  .site-modal-close {
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+  .modal-block p {
+    font-size: 13.5px;
+  }
+
+  #galeria,
+  #naturaleza,
+  #cultura,
+  #experiencias,
+  #comunidades,
+  #monumentos,
+  #guia,
+  #cenotes,
+  #mapa {
+    scroll-margin-top: 76px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MÃ“VIL PEQUEÃ‘O (< 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 379.98px) {
+  .section-shell {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gallery-section,
+  .nature-section,
+  .culture-section,
+  .experiences-section,
+  .monuments-section,
+  .guide-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .gallery-mosaic--primary {
+    grid-template-rows: 230px 200px 170px;
+  }
+
+  .gallery-figure--main {
+    height: 230px;
+  }
+
+  .gallery-stack {
+    height: 200px;
+  }
+
+  .gallery-figure--side {
+    height: 170px;
+  }
+
+  .gallery-card {
+    height: 230px;
+  }
+
+  .nature-main {
+    height: 260px;
+  }
+
+  .nature-detail,
+  .nature-teal-card {
+    min-height: 190px;
+    height: 190px;
+  }
+
+  .cenote-card {
+    height: 330px;
+  }
+
+  .festivity-card {
+    height: 250px;
+  }
+
+  .pueblo-card {
+    height: 330px;
+  }
+
+  .monument-card-media {
+    height: 200px;
+  }
+
+  .shopping-capsule {
+    padding: 14px 16px;
+  }
+
+  .shopping-capsule-title {
+    font-size: 26px;
+  }
+
+  .glass-banner-title {
+    font-size: 26px;
+  }
+
+  .guide-title {
+    font-size: 34px;
+  }
+
+  .footer-brand {
+    font-size: 48px;
+  }
+
+  .site-modal-media {
+    height: 190px;
+  }
+}
+

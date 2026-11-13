@@ -1,0 +1,119 @@
+/* ==========================================================================
+   BACALAR TOURISM — STYLES.CSS
+   Estilos globales, variables de diseño y tipografías base
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. VARIABLES CSS (CUSTOM PROPERTIES)
+   Tokens oficiales del diseño Figma (Home-Bacalar / Delfin)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Paleta cromática aprobada */
+  --color-primary-dark: #0b2545;      /* Azul abisal / fondo principal oscuro */
+  --color-nav-blue: #20416b;          /* Azul navegación secundaria */
+  --color-accent-teal: #48c9b0;       /* Turquesa / acentos vivos y estados activos */
+  --color-sky-blue: #2a9dce;          /* Azul cielo / marcadores decorativos */
+  --color-bg-light: #f4fafc;          /* Azul glaciar claro / fondo secciones claras */
+  --color-text-muted: #5f7487;        /* Gris pizarra / texto secundario en fondo claro */
+  --color-brand-blue: #145da0;        /* Azul institucional / tags y subtítulos */
+  --color-ice-blue: #ddf3fa;          /* Azul hielo / textos sobre fondos oscuros */
+  --color-white: #ffffff;             /* Blanco puro */
+
+  /* Tipografías oficiales */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-script: 'Birthstone Bounce', cursive;
+
+  /* Transiciones y radios */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --------------------------------------------------------------------------
+   2. REGLAS GLOBALES Y RESET
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  color: var(--color-primary-dark);
+  background-color: var(--color-bg-light);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Tipografías base */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  margin: 0;
+  color: var(--color-primary-dark);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Accesibilidad */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Contenedor estándar ajustado a la grilla de 1440px */
+.container-bacalar {
+  width: 100%;
+  max-width: 1336px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .container-bacalar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-bacalar {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
