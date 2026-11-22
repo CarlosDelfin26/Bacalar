@@ -30,7 +30,7 @@
       
       <!-- Lado Izquierdo: Botón Hamburguesa + Logo -->
       <div class="d-flex align-items-center gap-3">
-        <!-- Botón Hamburguesa (se activa en pantallas menores a 1400px o móviles) -->
+        <!-- Botón Hamburguesa (se activa cuando no hay espacio en pantalla) -->
         <button class="admin-hamburger-btn d-xxl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#adminSidebar" aria-controls="adminSidebar" aria-label="Abrir menú de navegación">
           <i class="bi bi-list"></i>
         </button>
@@ -96,7 +96,7 @@
           <i class="bi bi-box-arrow-right"></i>
           <span>Salir</span>
         </a>
-        <!-- Móvil ultra compacto: icono de salida -->
+        <!-- Móvil: icono compacto -->
         <a href="{{ route('home') }}" class="admin-logout-btn d-sm-none px-2" title="Salir">
           <i class="bi bi-box-arrow-right"></i>
         </a>
@@ -106,7 +106,7 @@
   </nav>
 
   <!-- ========================================================================
-       SIDEBAR ANIMADO OFFCANVAS (DRAWER LATERAL RESPONSIVO)
+       SIDEBAR ANIMADO OFFCANVAS (COLORES SÓLIDOS Y SOMBRAS SUTILES)
        ======================================================================== -->
   <aside class="offcanvas offcanvas-start admin-sidebar-offcanvas" tabindex="-1" id="adminSidebar" aria-labelledby="adminSidebarLabel">
     
@@ -252,12 +252,12 @@
   </aside>
 
   <!-- ========================================================================
-       CONTENIDO PRINCIPAL DEL DASHBOARD
+       CONTENIDO PRINCIPAL DEL DASHBOARD (ADAPTABLE A TODO EL BODY)
        ======================================================================== -->
-  <main class="container-fluid px-3 px-sm-4 px-lg-5 py-4" style="max-width: 1440px;">
+  <main class="admin-main container-fluid px-3 px-sm-4 px-xl-5 py-3 py-md-4">
 
     <!-- 1. TARJETA DE CABECERA (PANEL DE ADMINISTRACIÓN) -->
-    <header class="admin-header-card">
+    <header class="admin-header-card mb-3 mb-md-4">
       <div>
         <h1 class="admin-header-title">
           <span>Panel de Administración</span>
@@ -277,22 +277,22 @@
       </div>
     </header>
 
-    <!-- 2. TARJETAS DE MÉTRICAS (GRID PRINCIPAL) -->
-    <section class="row g-3 mb-4" aria-label="Métricas del sistema">
-      
-      <!-- Card Izquierda: Visitas al sitio web (Ancho 5 columnas en desktop) -->
-      <div class="col-12 col-lg-5">
-        <div class="admin-stat-card">
-          <div>
-            <div class="stat-header">
-              <div class="stat-icon-wrapper color-sky">
-                <i class="bi bi-eye"></i>
-              </div>
-              <span class="stat-badge-weekly">
-                <i class="bi bi-calendar4-week"></i>
-                Semanal
-              </span>
+    <!-- 2. GRID DE CÁPSULAS CON CELDAS COMBINADAS (BENTO GRID) -->
+    <section class="admin-metrics-container" aria-label="Métricas del sistema">
+      <div class="admin-bento-grid">
+        
+        <!-- Cápsula 1: Visitas al sitio web (Celda combinada: Span 2 columnas) -->
+        <article class="admin-stat-card bento-card-wide-start">
+          <div class="stat-header">
+            <div class="stat-icon-wrapper color-sky">
+              <i class="bi bi-eye"></i>
             </div>
+            <span class="stat-badge-weekly">
+              <i class="bi bi-calendar4-week"></i>
+              Semanal
+            </span>
+          </div>
+          <div>
             <div class="stat-number">19</div>
             <div class="stat-label">Visitas al sitio web</div>
           </div>
@@ -300,244 +300,91 @@
             <span class="admin-status-dot"></span>
             <span>1 visualizando simultáneamente</span>
           </div>
-        </div>
-      </div>
+        </article>
 
-      <!-- Columna Derecha: 5 métricas compactas (Ancho 7 columnas en desktop) -->
-      <div class="col-12 col-lg-7">
-        <div class="row g-3">
-          
-          <!-- Tours disponibles -->
-          <div class="col-12 col-sm-6">
-            <div class="admin-stat-card">
-              <div class="stat-header">
-                <div class="stat-icon-wrapper color-teal">
-                  <i class="bi bi-flag"></i>
-                </div>
-                <a href="#tours" class="stat-link-icon" title="Ver tours">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </div>
-              <div>
-                <div class="stat-number">31</div>
-                <div class="stat-label">Tours disponibles</div>
-                <p class="stat-subtext">Aventuras y náuticos</p>
-              </div>
+        <!-- Cápsula 2: Tours disponibles (Span 1 columna) -->
+        <article class="admin-stat-card bento-card-single">
+          <div class="stat-header">
+            <div class="stat-icon-wrapper color-teal">
+              <i class="bi bi-flag"></i>
             </div>
+            <a href="#tours" class="stat-link-icon" title="Ver tours">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
           </div>
+          <div>
+            <div class="stat-number">31</div>
+            <div class="stat-label">Tours disponibles</div>
+            <p class="stat-subtext">Aventuras y náuticos</p>
+          </div>
+        </article>
 
-          <!-- Hoteles registrados -->
-          <div class="col-12 col-sm-6">
-            <div class="admin-stat-card">
-              <div class="stat-header">
-                <div class="stat-icon-wrapper color-purple">
-                  <i class="bi bi-door-open"></i>
-                </div>
-                <a href="#hoteles" class="stat-link-icon" title="Ver hoteles">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </div>
-              <div>
-                <div class="stat-number">6</div>
-                <div class="stat-label">Hoteles registrados</div>
-                <p class="stat-subtext">En el sistema</p>
-              </div>
+        <!-- Cápsula 3: Hoteles registrados (Span 1 columna) -->
+        <article class="admin-stat-card bento-card-single">
+          <div class="stat-header">
+            <div class="stat-icon-wrapper color-purple">
+              <i class="bi bi-door-open"></i>
             </div>
+            <a href="#hoteles" class="stat-link-icon" title="Ver hoteles">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
           </div>
+          <div>
+            <div class="stat-number">6</div>
+            <div class="stat-label">Hoteles registrados</div>
+            <p class="stat-subtext">En el sistema</p>
+          </div>
+        </article>
 
-          <!-- Artesanías -->
-          <div class="col-12 col-sm-4">
-            <div class="admin-stat-card">
-              <div class="stat-header">
-                <div class="stat-icon-wrapper color-amber">
-                  <i class="bi bi-palette"></i>
-                </div>
-                <a href="#artesanias" class="stat-link-icon" title="Ver artesanías">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </div>
-              <div>
-                <div class="stat-number">10</div>
-                <div class="stat-label">Artesanías</div>
-                <p class="stat-subtext">Unidades en exposición.</p>
-              </div>
+        <!-- Cápsula 4: Artesanías (Span 1 columna) -->
+        <article class="admin-stat-card bento-card-single">
+          <div class="stat-header">
+            <div class="stat-icon-wrapper color-amber">
+              <i class="bi bi-palette"></i>
             </div>
+            <a href="#artesanias" class="stat-link-icon" title="Ver artesanías">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
           </div>
+          <div>
+            <div class="stat-number">10</div>
+            <div class="stat-label">Artesanías</div>
+            <p class="stat-subtext">Unidades en exposición.</p>
+          </div>
+        </article>
 
-          <!-- Mensajes recibidos -->
-          <div class="col-12 col-sm-4">
-            <div class="admin-stat-card">
-              <div class="stat-header">
-                <div class="stat-icon-wrapper color-rose">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <a href="#mensajes" class="stat-link-icon" title="Ver mensajes">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </div>
-              <div>
-                <div class="stat-number">10</div>
-                <div class="stat-label">Mensajes recibidos</div>
-                <p class="stat-subtext">Bandeja de contacto</p>
-              </div>
+        <!-- Cápsula 5: Mensajes recibidos (Span 1 columna) -->
+        <article class="admin-stat-card bento-card-single">
+          <div class="stat-header">
+            <div class="stat-icon-wrapper color-rose">
+              <i class="bi bi-envelope"></i>
             </div>
+            <a href="#mensajes" class="stat-link-icon" title="Ver mensajes">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
           </div>
+          <div>
+            <div class="stat-number">10</div>
+            <div class="stat-label">Mensajes recibidos</div>
+          </div>
+        </article>
 
-          <!-- Administrar página principal -->
-          <div class="col-12 col-sm-4">
-            <div class="admin-stat-card">
-              <div class="stat-header">
-                <div class="stat-icon-wrapper color-slate">
-                  <i class="bi bi-layout-text-window-reverse"></i>
-                </div>
-                <a href="{{ route('home') }}" target="_blank" class="stat-link-icon" title="Ir al sitio público">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </a>
-              </div>
-              <div class="mt-3">
-                <div class="stat-label" style="font-size: 0.92rem;">Administrar pagina principal.</div>
-              </div>
+        <!-- Cápsula 6: Administrar página principal (Celda combinada: Span 2 columnas) -->
+        <article class="admin-stat-card bento-card-wide-end">
+          <div class="stat-header">
+            <div class="stat-icon-wrapper color-slate">
+              <i class="bi bi-layout-text-window-reverse"></i>
             </div>
+            <a href="{{ route('home') }}" target="_blank" class="stat-link-icon" title="Ir al sitio público">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
           </div>
+          <div>
+            <div class="stat-label" style="font-size: 0.98rem;">Administrar pagina principal.</div>
+          </div>
+        </article>
 
-        </div>
       </div>
-
-    </section>
-
-    <!-- 3. MÓDULOS DE ACCIÓN Y GESTIÓN (GRID 3 COLUMNAS) -->
-    <section class="row g-3" aria-label="Módulos de gestión">
-      
-      <!-- 1. Gestión de Tours -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#gestion-tours" class="admin-action-card">
-          <div class="action-icon-box color-teal">
-            <i class="bi bi-flag"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Gestión de Tours</h2>
-            <p class="action-desc">Administra cards y modales de subpáginas (náuticos, ruinas, etc.).</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 2. Consejos y recomendaciones -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#consejos" class="admin-action-card">
-          <div class="action-icon-box color-sky">
-            <i class="bi bi-envelope"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Consejos y recomendaciones.</h2>
-            <p class="action-desc">Administración de tips y recomendaciones para viajeros.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 3. Gestión de Hoteles -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#gestion-hoteles" class="admin-action-card">
-          <div class="action-icon-box color-purple">
-            <i class="bi bi-door-open"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Gestión de Hoteles</h2>
-            <p class="action-desc">Administra tarifas, imágenes, puntuaciones y amenidades.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 4. Artesanías -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#artesanias" class="admin-action-card">
-          <div class="action-icon-box color-amber">
-            <i class="bi bi-palette"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Artesanías</h2>
-            <p class="action-desc">Gestiona catálogo de artesanías.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 5. Galería de Imágenes -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#galeria" class="admin-action-card">
-          <div class="action-icon-box color-cyan">
-            <i class="bi bi-images"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Galería de Imágenes</h2>
-            <p class="action-desc">Sube y organiza material fotográfico de alta resolución.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 6. Transportación -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#transportacion" class="admin-action-card">
-          <div class="action-icon-box color-emerald">
-            <i class="bi bi-truck"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Transportación</h2>
-            <p class="action-desc">Control de transportes disponibles.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 7. Papelera de Reciclaje -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#papelera" class="admin-action-card">
-          <div class="action-icon-box color-teal">
-            <i class="bi bi-trash3"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Papelera de Reciclaje</h2>
-            <p class="action-desc">Restauración y purga segura de elementos eliminados.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 8. Cultura y tradiciones -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#cultura" class="admin-action-card">
-          <div class="action-icon-box color-orange">
-            <i class="bi bi-bank"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Cultura y tradiciones</h2>
-            <p class="action-desc">Restauración y purga segura de elementos eliminados.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 9. Gastronomía -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#gastronomia" class="admin-action-card">
-          <div class="action-icon-box color-slate">
-            <i class="bi bi-cup-hot"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Gastronomía</h2>
-            <p class="action-desc">Restauración y purga segura de elementos eliminados.</p>
-          </div>
-        </a>
-      </div>
-
-      <!-- 10. Atractivos turísticos -->
-      <div class="col-12 col-md-6 col-lg-4">
-        <a href="#atractivos" class="admin-action-card">
-          <div class="action-icon-box color-indigo">
-            <i class="bi bi-geo-alt"></i>
-          </div>
-          <div class="action-content">
-            <h2 class="action-title">Atractivos turísticos</h2>
-            <p class="action-desc">Restauración y purga segura de elementos eliminados.</p>
-          </div>
-        </a>
-      </div>
-
     </section>
 
   </main>
