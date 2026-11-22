@@ -19,6 +19,10 @@ Route::view('/', 'index')->name('home');
 // Redirección para compatibilidad con accesos a /index.html
 Route::redirect('/index.html', '/');
 
+// Panel de administración (Dashboard prototipo)
+Route::view('/admin', 'admin.index')->name('admin.index');
+Route::view('/admin/dashboard', 'admin.index')->name('admin.dashboard');
+
 // Rutas dinámicas para páginas del equipo (resources/views/pages/*.blade.php)
 Route::get('/pages/{page}', function (string $page) {
     $slug = str_replace('.html', '', $page);

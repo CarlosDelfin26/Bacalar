@@ -59,4 +59,15 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
         $response->assertViewIs('pages.comunidades');
     }
+
+    /**
+     * Verifica que el panel de administración (/admin) cargue la vista admin.index.
+     */
+    public function test_admin_dashboard_returns_successful_response(): void
+    {
+        $response = $this->get('/admin');
+
+        $response->assertStatus(200);
+        $response->assertViewIs('admin.index');
+    }
 }
