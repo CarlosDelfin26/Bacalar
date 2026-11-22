@@ -108,8 +108,8 @@ function initSmoothScroll() {
         return;
       }
 
-      // Los enlaces de la navegación secundaria ya tienen su propio manejador.
-      if (link.classList.contains('nav-link-sec')) return;
+      // Los enlaces de la navegación secundaria y el CTA del Hero ya tienen su propio manejador.
+      if (link.classList.contains('nav-link-sec') || link.classList.contains('btn-hero-cta')) return;
 
       const target = document.querySelector(href);
       if (!target) return;

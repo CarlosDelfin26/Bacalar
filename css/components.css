@@ -1,15 +1,14 @@
-﻿/* ==========================================================================
-   BACALAR TOURISM â€” COMPONENTS.CSS
+/* ==========================================================================
+   BACALAR TOURISM — COMPONENTS.CSS
    Componentes de interfaz reutilizables e individuales
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   HERO COMPONENT (Nodo Figma 4:1820 â€” 1440 Ã— 900 px)
+   HERO COMPONENT (Nodo Figma 4:1820 — 1440 × 900 px)
    -------------------------------------------------------------------------- */
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   min-height: 900px;
   overflow: hidden;
   background-color: var(--color-primary-dark);
@@ -43,7 +42,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  display: none; /* Se activarÃ¡ cuando se inserte el archivo de video final */
+  display: none; /* Se activará cuando se inserte el archivo de video final */
 }
 
 .hero-media-container.has-video .hero-bg-video {
@@ -54,7 +53,7 @@
   display: none;
 }
 
-/* 2. Capa de superposiciÃ³n con gradiente oficial de Figma (Requisito 4) */
+/* 2. Capa de superposición con gradiente oficial de Figma (Requisito 4) */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -76,7 +75,6 @@
   position: relative;
   z-index: 3;
   width: 100%;
-  min-height: 100vh;
   min-height: 900px;
   display: flex;
   flex-direction: column;
@@ -123,7 +121,7 @@
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
 }
 
-/* Ãrea central con el logotipo ilustrado de Bacalar */
+/* Área central con el logotipo ilustrado de Bacalar */
 .hero-center-brand {
   display: flex;
   align-items: center;
@@ -135,7 +133,7 @@
 
 .hero-main-logo {
   width: 100%;
-  max-width: 721px; /* DimensiÃ³n exacta en Figma */
+  max-width: 721px; /* Dimensión exacta en Figma */
   height: auto;
   max-height: 418px;
   object-fit: contain;
@@ -145,7 +143,7 @@
   user-select: none;
 }
 
-/* Ãrea inferior con el botÃ³n CTA centrado */
+/* Área inferior con el botón CTA centrado */
 .hero-bottom-action {
   display: flex;
   justify-content: center;
@@ -208,7 +206,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   SECONDARY NAV COMPONENT (Nodo Figma 637:382 â€” 1440 Ã— 81 px)
+   SECONDARY NAV COMPONENT (Nodo Figma 637:382 — 1440 × 81 px)
    -------------------------------------------------------------------------- */
 .secondary-nav-section {
   position: sticky;
@@ -282,7 +280,7 @@
   opacity: 1;
 }
 
-/* Estado activo oficial de Figma (Nodo 637:384: GalerÃ­a en #48c9b0) */
+/* Estado activo oficial de Figma (Nodo 637:384: Galería en #48c9b0) */
 .nav-link-sec.active {
   color: var(--color-accent-teal);
   opacity: 1;
@@ -302,11 +300,11 @@
 }
 
 /* ==========================================================================
-   SECCIONES 3 A 10 â€” COMPONENTES DEL INDEX
+   SECCIONES 3 A 10 — COMPONENTES DEL INDEX
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   Utilidades generales de secciÃ³n
+   Utilidades generales de sección
    -------------------------------------------------------------------------- */
 .section-shell {
   width: 100%;
@@ -567,7 +565,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 03 â€” GALERÃA VISUAL (629:382)
+   TAREA 03 — GALERÍA VISUAL (629:382)
    -------------------------------------------------------------------------- */
 .gallery-section {
   padding: 104px 0 112px;
@@ -623,7 +621,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 04 â€” NATURALEZA Y CENOTES (629:425)
+   TAREA 04 — NATURALEZA Y CENOTES (629:425)
    -------------------------------------------------------------------------- */
 .nature-section {
   padding: 104px 0;
@@ -756,7 +754,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 05 â€” CULTURA E HISTORIA (629:489)
+   TAREA 05 — CULTURA E HISTORIA (629:489)
    -------------------------------------------------------------------------- */
 .culture-section {
   padding: 104px 0;
@@ -838,7 +836,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 06 â€” TURISMO COMUNITARIO Y EXPERIENCIAS (629:551)
+   TAREA 06 — TURISMO COMUNITARIO Y EXPERIENCIAS (629:551)
    -------------------------------------------------------------------------- */
 .experiences-section {
   padding: 104px 0;
@@ -987,7 +985,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 07 â€” BANNER COMPRAS Y SOUVENIRS (776:387)
+   TAREA 07 — BANNER COMPRAS Y SOUVENIRS (776:387)
    -------------------------------------------------------------------------- */
 .shopping-banner {
   position: relative;
@@ -1068,7 +1066,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 08 â€” MONUMENTOS HISTÃ“RICOS (637:404)
+   TAREA 08 — MONUMENTOS HISTÓRICOS (637:404)
    -------------------------------------------------------------------------- */
 .monuments-section {
   padding: 104px 0;
@@ -1166,7 +1164,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 09 â€” GUÃA DE VIAJE Y SUSTENTABILIDAD (629:677)
+   TAREA 09 — GUÍA DE VIAJE Y SUSTENTABILIDAD (629:677)
    -------------------------------------------------------------------------- */
 .guide-section {
   padding: 104px 0;
@@ -1354,7 +1352,7 @@ a.guide-banner:focus-visible {
 }
 
 /* --------------------------------------------------------------------------
-   TAREA 10 â€” FOOTER (4:2037)
+   TAREA 10 — FOOTER (4:2037)
    -------------------------------------------------------------------------- */
 .site-footer {
   display: flex;
@@ -1606,7 +1604,7 @@ a.guide-banner:focus-visible {
   transform: rotate(90deg);
 }
 
-/* Placeholder previsto para imÃ¡genes no disponibles en el documento de Figma */
+/* Placeholder previsto para imágenes no disponibles en el documento de Figma */
 .modal-media-placeholder {
   display: flex;
   flex-direction: column;
@@ -1634,7 +1632,7 @@ a.guide-banner:focus-visible {
   color: var(--color-text-muted);
 }
 
-/* Desplazamiento interno con la navegaciÃ³n sticky */
+/* Desplazamiento interno con la navegación sticky */
 #galeria,
 #naturaleza,
 #cultura,
