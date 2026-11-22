@@ -16,9 +16,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Hojas de estilos del proyecto -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/components.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 </head>
 <body>
 
@@ -31,7 +31,7 @@
     <!-- 1. Contenedor de medios de fondo (Imagen de alta fidelidad / Video preparado) -->
     <div class="hero-media-container" aria-hidden="true">
       <!-- Imagen de fondo de alta fidelidad: Toma aérea de la laguna de Bacalar -->
-      <img src="img/hero/hero-bg.jpg" 
+      <img src="{{ asset('img/hero/hero-bg.jpg') }}" 
            alt="Vista aérea de la Laguna de los Siete Colores en Bacalar" 
            class="hero-bg-image">
 
@@ -57,14 +57,14 @@
       <div class="hero-top-bar">
         <div class="hero-brand-group">
           <!-- Logo UPB (120 × 120 px de referencia en Figma) -->
-          <img src="img/branding/logo-upb.png" 
+          <img src="{{ asset('img/branding/logo-upb.png') }}" 
                alt="Universidad Politécnica de Bacalar" 
                class="hero-logo-upb"
                width="110" 
                height="100">
 
           <!-- Divisor vertical Line 19 (14 × 72 px en Figma) -->
-          <img src="img/branding/line-separator.svg" 
+          <img src="{{ asset('img/branding/line-separator.svg') }}" 
                alt="" 
                class="hero-divider" 
                aria-hidden="true"
@@ -72,7 +72,7 @@
                height="60">
 
           <!-- Logo Pueblo Mágico (111 × 111 px de referencia en Figma) -->
-          <img src="img/branding/logo-pueblo-magico.png" 
+          <img src="{{ asset('img/branding/logo-pueblo-magico.png') }}" 
                alt="Pueblo Mágico Bacalar" 
                class="hero-logo-pm"
                width="100" 
@@ -82,7 +82,7 @@
 
       <!-- Zona Central: Logotipo e isotipo principal de Bacalar (Nodo 60:18, 721 × 418 px en Figma) -->
       <div class="hero-center-brand">
-        <img src="img/branding/logo-bacalar-hero.png" 
+        <img src="{{ asset('img/branding/logo-bacalar-hero.png') }}" 
              alt="Bacalar Pueblo Mágico" 
              class="hero-main-logo img-fluid"
              width="721" 
@@ -97,7 +97,7 @@
            aria-label="Descubrir Bacalar — Ir a la siguiente sección">
           <span>Descubrir Bacalar</span>
           <span class="cta-icon" aria-hidden="true">
-            <img src="img/hero/arrow-right.svg" alt="" width="16" height="16">
+            <img src="{{ asset('img/hero/arrow-right.svg') }}" alt="" width="16" height="16">
           </span>
         </a>
       </div>
@@ -170,26 +170,26 @@
         <!-- Primer mosaico: 570 × 510 / 458 × 300 + 458 × 178 / 236 × 510 -->
         <div class="gallery-mosaic gallery-mosaic--primary">
           <figure class="gallery-figure gallery-figure--main">
-            <img src="img/gallery/gallery-laguna-aerea.webp"
+            <img src="{{ asset('img/gallery/gallery-laguna-aerea.webp') }}"
                  alt="Vista panorámica de la Laguna de los Siete Colores en Bacalar"
                  width="570" height="510" loading="lazy">
           </figure>
 
           <div class="gallery-stack">
             <figure class="gallery-figure">
-              <img src="img/gallery/gallery-laguna-dos.webp"
+              <img src="{{ asset('img/gallery/gallery-laguna-dos.webp') }}"
                    alt="Aguas turquesa de la laguna de Bacalar"
                    width="458" height="300" loading="lazy">
             </figure>
             <figure class="gallery-figure">
-              <img src="img/gallery/gallery-cenote.webp"
+              <img src="{{ asset('img/gallery/gallery-cenote.webp') }}"
                    alt="Cenote de agua dulce rodeado de vegetación en Bacalar"
                    width="458" height="178" loading="lazy">
             </figure>
           </div>
 
           <figure class="gallery-figure gallery-figure--side">
-            <img src="img/gallery/gallery-fuerte.webp"
+            <img src="{{ asset('img/gallery/gallery-fuerte.webp') }}"
                  alt="Fuerte de San Felipe junto a la laguna de Bacalar"
                  width="236" height="510" loading="lazy">
           </figure>
@@ -198,7 +198,7 @@
         <!-- Segundo mosaico: tres tarjetas de 421 × 340 con overlay -->
         <div class="gallery-mosaic gallery-mosaic--secondary">
           <article class="media-card gallery-card">
-            <img src="img/gallery/gallery-card-laguna.webp"
+            <img src="{{ asset('img/gallery/gallery-card-laguna.webp') }}"
                  alt="Muelle de madera sobre la laguna de Bacalar" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -208,7 +208,7 @@
           </article>
 
           <article class="media-card gallery-card">
-            <img src="img/gallery/gallery-card-cenote.webp"
+            <img src="{{ asset('img/gallery/gallery-card-cenote.webp') }}"
                  alt="Aguas cristalinas de un cenote en Bacalar" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -218,7 +218,7 @@
           </article>
 
           <article class="media-card gallery-card">
-            <img src="img/gallery/gallery-card-pueblo.webp"
+            <img src="{{ asset('img/gallery/gallery-card-pueblo.webp') }}"
                  alt="Letras monumentales de Bacalar Pueblo Mágico" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -241,14 +241,14 @@
         <div class="nature-intro">
           <div class="nature-visual" aria-label="Composición fotográfica de la laguna de Bacalar">
             <figure class="nature-main">
-              <img src="img/nature/nature-laguna.webp"
+              <img src="{{ asset('img/nature/nature-laguna.webp') }}"
                    alt="Vista de la Laguna de los Siete Colores rodeada de manglar"
                    width="548" height="620" loading="lazy">
             </figure>
 
             <div class="nature-side">
               <figure class="nature-detail">
-                <img src="img/nature/nature-detalle.webp"
+                <img src="{{ asset('img/nature/nature-detalle.webp') }}"
                      alt="Detalle de las aguas turquesa de Bacalar"
                      width="174" height="280" loading="lazy">
               </figure>
@@ -292,7 +292,7 @@
 
         <div class="cenote-grid" id="cenotes">
           <article class="media-card cenote-card">
-            <img src="img/nature/cenote-azul.webp"
+            <img src="{{ asset('img/nature/cenote-azul.webp') }}"
                  alt="Cenote Azul en Bacalar" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -303,7 +303,7 @@
           </article>
 
           <article class="media-card cenote-card">
-            <img src="img/nature/cenote-esmeralda.webp"
+            <img src="{{ asset('img/nature/cenote-esmeralda.webp') }}"
                  alt="Cenote de agua dulce rodeado de vegetación en Bacalar" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -314,7 +314,7 @@
           </article>
 
           <article class="media-card cenote-card">
-            <img src="img/nature/cenote-cocalitos.webp"
+            <img src="{{ asset('img/nature/cenote-cocalitos.webp') }}"
                  alt="Vista subacuática del agua turquesa de un cenote de Bacalar" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -352,7 +352,7 @@
           </div>
 
           <figure class="culture-photo">
-            <img src="img/culture/culture-historia.webp"
+            <img src="{{ asset('img/culture/culture-historia.webp') }}"
                  alt="Murales y arquitectura del centro de Bacalar"
                  width="704" height="420" loading="lazy">
           </figure>
@@ -368,7 +368,7 @@
 
         <div class="festivity-grid">
           <article class="media-card festivity-card">
-            <img src="img/culture/festividad-san-joaquin.webp"
+            <img src="{{ asset('img/culture/festividad-san-joaquin.webp') }}"
                  alt="Procesión religiosa en Bacalar durante una festividad tradicional" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -379,7 +379,7 @@
           </article>
 
           <article class="media-card festivity-card">
-            <img src="img/culture/festividad-dia-muertos.webp"
+            <img src="{{ asset('img/culture/festividad-dia-muertos.webp') }}"
                  alt="Altar de Día de Muertos con flores y ofrendas" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -390,7 +390,7 @@
           </article>
 
           <article class="media-card festivity-card">
-            <img src="img/culture/festividad-cultura-maya.webp"
+            <img src="{{ asset('img/culture/festividad-cultura-maya.webp') }}"
                  alt="Artesanías y colores de la cultura maya en Quintana Roo" loading="lazy">
             <div class="media-card-overlay"></div>
             <div class="media-card-content">
@@ -430,7 +430,7 @@
           <div class="aquatic-grid">
             <article class="aquatic-card">
               <div class="aquatic-card-media">
-                <img src="img/experiences/exp-kayak.webp"
+                <img src="{{ asset('img/experiences/exp-kayak.webp') }}"
                      alt="Kayak en las aguas tranquilas de la laguna de Bacalar"
                      width="420" height="320" loading="lazy">
               </div>
@@ -443,7 +443,7 @@
 
             <article class="aquatic-card">
               <div class="aquatic-card-media">
-                <img src="img/experiences/exp-lancha.webp"
+                <img src="{{ asset('img/experiences/exp-lancha.webp') }}"
                      alt="Lancha navegando por la laguna de Bacalar"
                      width="420" height="320" loading="lazy">
               </div>
@@ -456,7 +456,7 @@
 
             <article class="aquatic-card">
               <div class="aquatic-card-media">
-                <img src="img/experiences/exp-paddleboard.webp"
+                <img src="{{ asset('img/experiences/exp-paddleboard.webp') }}"
                      alt="Paddleboard sobre aguas turquesa en Bacalar"
                      width="420" height="320" loading="lazy">
               </div>
@@ -481,7 +481,7 @@
 
           <div class="pueblos-grid">
             <article class="media-card pueblo-card">
-              <img src="img/experiences/pueblo-buenavista.webp"
+              <img src="{{ asset('img/experiences/pueblo-buenavista.webp') }}"
                    alt="Paisaje rural y selva en la comunidad de Buenavista" loading="lazy">
               <div class="media-card-overlay"></div>
               <div class="media-card-content">
@@ -492,7 +492,7 @@
             </article>
 
             <article class="media-card pueblo-card">
-              <img src="img/experiences/pueblo-maya-balam.webp"
+              <img src="{{ asset('img/experiences/pueblo-maya-balam.webp') }}"
                    alt="Comunidad maya de la región de Bacalar" loading="lazy">
               <div class="media-card-overlay"></div>
               <div class="media-card-content">
@@ -503,7 +503,7 @@
             </article>
 
             <article class="media-card pueblo-card">
-              <img src="img/experiences/pueblo-chacchoben.webp"
+              <img src="{{ asset('img/experiences/pueblo-chacchoben.webp') }}"
                    alt="Zona arqueológica y entorno de Chacchoben" loading="lazy">
               <div class="media-card-overlay"></div>
               <div class="media-card-content">
@@ -514,7 +514,7 @@
             </article>
 
             <article class="media-card pueblo-card">
-              <img src="img/experiences/pueblo-bacalar.webp"
+              <img src="{{ asset('img/experiences/pueblo-bacalar.webp') }}"
                    alt="Calles y letras monumentales de Bacalar Pueblo Mágico" loading="lazy">
               <div class="media-card-overlay"></div>
               <div class="media-card-content">
@@ -539,7 +539,7 @@
           <div class="crafts-grid">
             <article class="craft-card">
               <div class="craft-card-media">
-                <img src="img/experiences/artesania-madera.webp"
+                <img src="{{ asset('img/experiences/artesania-madera.webp') }}"
                      alt="Tallas y juguetes artesanales de madera"
                      width="312" height="220" loading="lazy">
               </div>
@@ -552,7 +552,7 @@
 
             <article class="craft-card">
               <div class="craft-card-media">
-                <img src="img/experiences/artesania-fibras.webp"
+                <img src="{{ asset('img/experiences/artesania-fibras.webp') }}"
                      alt="Cestería y tejidos elaborados con fibras vegetales"
                      width="312" height="220" loading="lazy">
               </div>
@@ -565,7 +565,7 @@
 
             <article class="craft-card">
               <div class="craft-card-media">
-                <img src="img/experiences/artesania-derivados.webp"
+                <img src="{{ asset('img/experiences/artesania-derivados.webp') }}"
                      alt="Piezas artesanales elaboradas con tintes y materiales naturales"
                      width="312" height="220" loading="lazy">
               </div>
@@ -578,7 +578,7 @@
 
             <article class="craft-card">
               <div class="craft-card-media">
-                <img src="img/experiences/artesania-concha.webp"
+                <img src="{{ asset('img/experiences/artesania-concha.webp') }}"
                      alt="Artesanías elaboradas con concha y caracol"
                      width="312" height="220" loading="lazy">
               </div>
@@ -624,7 +624,7 @@
         <div class="monuments-grid">
           <article class="monument-card">
             <div class="monument-card-media">
-              <img src="img/monuments/monument-ichkabal.webp"
+              <img src="{{ asset('img/monuments/monument-ichkabal.webp') }}"
                    alt="Estructuras de la zona arqueológica de Ichkabal"
                    width="420" height="260" loading="lazy">
             </div>
@@ -640,7 +640,7 @@
 
           <article class="monument-card">
             <div class="monument-card-media">
-              <img src="img/monuments/monument-chacchoben.webp"
+              <img src="{{ asset('img/monuments/monument-chacchoben.webp') }}"
                    alt="Templo maya en la zona arqueológica de Chacchoben"
                    width="420" height="260" loading="lazy">
             </div>
@@ -656,7 +656,7 @@
 
           <article class="monument-card">
             <div class="monument-card-media">
-              <img src="img/monuments/monument-fuerte.webp"
+              <img src="{{ asset('img/monuments/monument-fuerte.webp') }}"
                    alt="Fuerte de San Felipe frente a la laguna de Bacalar"
                    width="420" height="260" loading="lazy">
             </div>
@@ -723,7 +723,7 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <figure class="guide-photo">
-              <img src="img/nature/guide-foto.webp"
+              <img src="{{ asset('img/nature/guide-foto.webp') }}"
                    alt="Vista de la laguna de Bacalar desde un muelle de madera"
                    loading="lazy"
                    decoding="async">
@@ -803,7 +803,7 @@
         </button>
         <div class="site-modal-grid">
           <figure class="site-modal-media">
-            <img src="img/monuments/modal-ichkabal.webp"
+            <img src="{{ asset('img/monuments/modal-ichkabal.webp') }}"
                  alt="Vista de las estructuras mayas de Ichkabal entre la selva"
                  width="480" height="680" loading="lazy">
             <figcaption class="site-modal-credit">Foto: Wikimedia Commons</figcaption>
@@ -841,7 +841,7 @@
         </button>
         <div class="site-modal-grid">
           <figure class="site-modal-media">
-            <img src="img/monuments/modal-chacchoben.webp"
+            <img src="{{ asset('img/monuments/modal-chacchoben.webp') }}"
                  alt="Templo maya de Chacchoben rodeado de vegetación"
                  width="480" height="680" loading="lazy">
             <figcaption class="site-modal-credit">Foto: Wikimedia Commons</figcaption>
@@ -879,7 +879,7 @@
         </button>
         <div class="site-modal-grid">
           <figure class="site-modal-media">
-            <img src="img/monuments/modal-fuerte.webp"
+            <img src="{{ asset('img/monuments/modal-fuerte.webp') }}"
                  alt="Fuerte de San Felipe de Bacalar frente a la laguna"
                  width="480" height="680" loading="lazy">
             <figcaption class="site-modal-credit">Foto: Wikimedia Commons</figcaption>
@@ -912,6 +912,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <!-- Scripts propios -->
-  <script src="js/main.js"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
