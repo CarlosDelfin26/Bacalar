@@ -142,7 +142,7 @@
       <div class="sidebar-heading">Principal</div>
       <div class="sidebar-nav-list mb-3">
         <a href="{{ route('admin.index') }}" class="sidebar-nav-item active">
-          <div class="sidebar-icon-box color-sky">
+          <div class="sidebar-icon-box icon-dark-sky">
             <i class="bi bi-grid-fill"></i>
           </div>
           <span>Dashboard</span>
@@ -154,85 +154,85 @@
       <div class="sidebar-nav-list">
         
         <a href="#tours" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-teal">
-            <i class="bi bi-flag"></i>
+          <div class="sidebar-icon-box icon-dark-teal">
+            <i class="bi bi-flag-fill"></i>
           </div>
           <span>Tours</span>
         </a>
 
         <a href="#consejos" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-sky">
-            <i class="bi bi-envelope"></i>
+          <div class="sidebar-icon-box icon-dark-sky">
+            <i class="bi bi-envelope-fill"></i>
           </div>
           <span>Consejos y recomendaciones</span>
         </a>
 
         <a href="#hoteles" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-purple">
-            <i class="bi bi-door-open"></i>
+          <div class="sidebar-icon-box icon-dark-purple">
+            <i class="bi bi-door-open-fill"></i>
           </div>
           <span>Hoteles</span>
         </a>
 
         <a href="#artesanias" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-amber">
-            <i class="bi bi-palette"></i>
+          <div class="sidebar-icon-box icon-dark-amber">
+            <i class="bi bi-palette-fill"></i>
           </div>
           <span>Artesanías</span>
         </a>
 
         <a href="#galeria" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-cyan">
+          <div class="sidebar-icon-box icon-dark-cyan">
             <i class="bi bi-images"></i>
           </div>
           <span>Galería de Imágenes</span>
         </a>
 
         <a href="#actividades" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-sky">
+          <div class="sidebar-icon-box icon-dark-sky">
             <i class="bi bi-water"></i>
           </div>
           <span>Actividades Recreativas</span>
         </a>
 
         <a href="#cultura" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-orange">
-            <i class="bi bi-bank"></i>
+          <div class="sidebar-icon-box icon-dark-orange">
+            <i class="bi bi-bank2"></i>
           </div>
           <span>Cultura y Tradiciones</span>
         </a>
 
         <a href="#gastronomia" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-slate">
-            <i class="bi bi-cup-hot"></i>
+          <div class="sidebar-icon-box icon-dark-slate">
+            <i class="bi bi-cup-hot-fill"></i>
           </div>
           <span>Gastronomía</span>
         </a>
 
         <a href="#atractivos" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-indigo">
-            <i class="bi bi-geo-alt"></i>
+          <div class="sidebar-icon-box icon-dark-indigo">
+            <i class="bi bi-geo-alt-fill"></i>
           </div>
           <span>Atractivos turísticos</span>
         </a>
 
         <a href="#compras" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-rose">
-            <i class="bi bi-bag-check"></i>
+          <div class="sidebar-icon-box icon-dark-rose">
+            <i class="bi bi-bag-fill"></i>
           </div>
           <span>Compras y Souvenirs</span>
         </a>
 
         <a href="#transportacion" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-emerald">
-            <i class="bi bi-truck"></i>
+          <div class="sidebar-icon-box icon-dark-emerald">
+            <i class="bi bi-truck-front-fill"></i>
           </div>
           <span>Transportación</span>
         </a>
 
         <a href="#papelera" class="sidebar-nav-item" data-bs-dismiss="offcanvas">
-          <div class="sidebar-icon-box color-teal">
-            <i class="bi bi-trash3"></i>
+          <div class="sidebar-icon-box icon-dark-teal">
+            <i class="bi bi-trash3-fill"></i>
           </div>
           <span>Papelera de Reciclaje</span>
         </a>

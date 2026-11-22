@@ -145,23 +145,22 @@ body.admin-body {
 }
 
 /* ==========================================================================
-   SIDEBAR ANIMADO OFFCANVAS (RESPONSIVE DRAWER)
+   SIDEBAR ANIMADO OFFCANVAS (RESPONSIVE DRAWER - COLORES SÓLIDOS Y SOMBRAS SUTILES)
    ========================================================================== */
 .admin-sidebar-offcanvas {
   width: 320px !important;
   max-width: 86vw !important;
-  background: rgba(7, 21, 38, 0.97) !important;
-  -webkit-backdrop-filter: blur(24px);
-  backdrop-filter: blur(24px);
-  border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: #0b1a2d !important;
+  border-right: 1px solid #162c46 !important;
   color: #ffffff;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  box-shadow: 10px 0 35px rgba(0, 0, 0, 0.5) !important;
+  transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1) !important;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.28) !important;
 }
 
 .admin-sidebar-header {
   padding: 18px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #081525;
+  border-bottom: 1px solid #162c46;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -183,57 +182,60 @@ body.admin-body {
 }
 
 .sidebar-close-btn {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  background: #112238;
+  border: 1px solid #1b3554;
+  color: #94a3b8;
   width: 34px;
   height: 34px;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: var(--admin-transition);
 }
 
 .sidebar-close-btn:hover {
-  background: rgba(239, 68, 68, 0.25);
-  color: #f87171;
-  border-color: rgba(239, 68, 68, 0.4);
+  background: #1e3a5f;
+  color: #ffffff;
+  border-color: #2b5080;
 }
 
 .admin-sidebar-body {
   padding: 16px 14px;
+  background: #0b1a2d;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  scrollbar-color: #1e3a5f transparent;
 }
 
 /* Tarjeta de usuario en el sidebar */
 .sidebar-user-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
+  background: #10233b;
+  border: 1px solid #173254;
+  border-radius: 12px;
   padding: 12px 14px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 .sidebar-avatar {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #0284c7 0%, #14b8a6 100%);
+  background: #0284c7;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.35);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-heading {
@@ -241,7 +243,7 @@ body.admin-body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: #64748b;
   margin: 16px 10px 8px 10px;
 }
 
@@ -256,52 +258,66 @@ body.admin-body {
   align-items: center;
   gap: 12px;
   padding: 9px 12px;
-  border-radius: 12px;
-  color: rgba(255, 255, 255, 0.78);
+  border-radius: 10px;
+  color: #cbd5e1;
   text-decoration: none;
   font-size: 0.88rem;
   font-weight: 500;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   border: 1px solid transparent;
 }
 
 .sidebar-nav-item:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateX(4px);
+  background: #132a47;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar-nav-item.active {
   color: #ffffff;
-  background: rgba(56, 189, 248, 0.18);
-  border-color: rgba(56, 189, 248, 0.4);
+  background: #153256;
+  border-color: #204b80;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Iconos del sidebar: fondos oscuros con sus respectivos colores */
 .sidebar-icon-box {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/* Fondos oscuros de color respectivo para iconos del sidebar */
+.icon-dark-sky { background-color: #0c2d48; color: #38bdf8; }
+.icon-dark-teal { background-color: #064038; color: #2dd4bf; }
+.icon-dark-purple { background-color: #2a114f; color: #c084fc; }
+.icon-dark-amber { background-color: #3b2308; color: #fbbf24; }
+.icon-dark-rose { background-color: #420f1c; color: #fb7185; }
+.icon-dark-slate { background-color: #1a2636; color: #94a3b8; }
+.icon-dark-emerald { background-color: #06392a; color: #34d399; }
+.icon-dark-cyan { background-color: #093344; color: #22d3ee; }
+.icon-dark-orange { background-color: #3b1b0b; color: #fb923c; }
+.icon-dark-indigo { background-color: #1c1a45; color: #818cf8; }
 
 .admin-sidebar-footer {
   padding: 14px 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(4, 13, 24, 0.6);
+  background: #081525;
+  border-top: 1px solid #162c46;
 }
 
 .btn-sidebar-logout {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  background: rgba(239, 68, 68, 0.14);
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: #251318;
+  border: 1px solid #481c25;
   color: #fca5a5;
   font-size: 0.88rem;
   font-weight: 600;
@@ -310,14 +326,14 @@ body.admin-body {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   transition: var(--admin-transition);
 }
 
 .btn-sidebar-logout:hover {
-  background: rgba(239, 68, 68, 0.25);
-  border-color: rgba(239, 68, 68, 0.5);
+  background: #36171f;
+  border-color: #632230;
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
 }
 
 /* ==========================================================================
