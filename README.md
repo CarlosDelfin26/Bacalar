@@ -1,6 +1,8 @@
 # Bacalar Tourism — Guía del proyecto
 
 > **Objetivo de este documento:** explicar cómo está organizado el repositorio, cómo ejecutar el sitio, qué parte desarrolla cada integrante y qué reglas debemos seguir para evitar conflictos al trabajar en equipo.
+>
+> password para acceder a admin(provisional): 301006
 
 ## 1. ¿Qué es Bacalar Tourism?
 
@@ -169,14 +171,11 @@ Reglas particulares del Index:
 
 ## 8. Cómo abrir el proyecto
 
-Este proyecto es un sitio estático. Para revisar el avance:
+Este proyecto cuenta con backend en Laravel y frontend responsivo.
 
-1. Clona o descarga el repositorio.
-2. Abre la carpeta del proyecto en Visual Studio Code.
-3. Abre `index.html` en un navegador. También puedes utilizar la extensión **Live Server** de VS Code si está instalada.
-4. Después de hacer cambios, actualiza el navegador para comprobar el resultado.
-
-No se requiere instalar Node.js ni ejecutar un servidor de desarrollo basado en frameworks para la estructura acordada actualmente.
+- **Página pública:** `http://localhost:8000/`
+- **Panel de Administración:** `http://localhost:8000/admin`
+- password para acceder a admin(provisional): 301006
 
 ## 9. Convenciones de código
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminAuthController;
+use App\Http\Middleware\AdminAuthMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +21,16 @@ Route::view('/', 'index')->name('home');
 // Redirección para compatibilidad con accesos a /index.html
 Route::redirect('/index.html', '/');
 
-// Panel de administración (Dashboard prototipo)
-Route::view('/admin', 'admin.index')->name('admin.index');
-Route::view('/admin/dashboard', 'admin.index')->name('admin.dashboard');
+// Autenticación para el panel de administración (Protegido por contraseña provisional)
+Route::get('/admin/login', [AdminAuthController::class, 'showLoginForm'])->name('admin.login');
+Route::post('/admin/login', [AdminAuthController::class, 'login'])->name('admin.login.submit');
+Route::match(['get', 'post'], '/admin/logout', [AdminAuthController::class, 'logout'])->name('admin.logout');
+
+// Panel de administración protegido (requiere autenticación)
+Route::middleware(['admin.auth'])->group(function () {
+    Route::view('/admin', 'admin.index')->name('admin.index');
+    Route::view('/admin/dashboard', 'admin.index')->name('admin.dashboard');
+});
 
 // Rutas dinámicas para páginas del equipo (resources/views/pages/*.blade.php)
 Route::get('/pages/{page}', function (string $page) {

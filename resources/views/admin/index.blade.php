@@ -92,12 +92,12 @@
       <!-- Lado Derecho: Botón Salir -->
       <div class="d-flex align-items-center gap-2">
         <!-- Escritorio: botón completo -->
-        <a href="{{ route('home') }}" class="admin-logout-btn d-none d-sm-inline-flex">
+        <a href="{{ route('admin.logout') }}" class="admin-logout-btn d-none d-sm-inline-flex">
           <i class="bi bi-box-arrow-right"></i>
           <span>Salir</span>
         </a>
         <!-- Móvil: icono compacto -->
-        <a href="{{ route('home') }}" class="admin-logout-btn d-sm-none px-2" title="Salir">
+        <a href="{{ route('admin.logout') }}" class="admin-logout-btn d-sm-none px-2" title="Salir">
           <i class="bi bi-box-arrow-right"></i>
         </a>
       </div>
@@ -243,7 +243,7 @@
 
     <!-- Pie del Sidebar -->
     <div class="admin-sidebar-footer">
-      <a href="{{ route('home') }}" class="btn-sidebar-logout">
+      <a href="{{ route('admin.logout') }}" class="btn-sidebar-logout">
         <i class="bi bi-box-arrow-right"></i>
         <span>Cerrar sesión</span>
       </a>
@@ -270,7 +270,7 @@
       </div>
 
       <div>
-        <a href="{{ route('home') }}" class="btn-admin-logout">
+        <a href="{{ route('admin.logout') }}" class="btn-admin-logout">
           <i class="bi bi-box-arrow-right"></i>
           <span>Cerrar sesión</span>
         </a>
