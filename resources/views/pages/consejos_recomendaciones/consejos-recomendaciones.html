@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Consejos y Recomendaciones — Bacalar Tourism | Pueblo Mágico</title>
+  <meta name="description" content="Guía de consejos, recomendaciones de viaje, directorio de emergencias y código de conducta del visitante en Bacalar, Quintana Roo.">
+
+  <!-- Preconexión a Google Fonts (Tipografías oficiales del proyecto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons (Para los íconos superiores y de apoyo) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Hojas de estilos globales del proyecto + tu hoja propia consejos.css -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/consejos.css">
+</head>
+<body>
+
+  <!-- SECCIÓN 1: HERO CON LOGOS A LA IZQUIERDA Y TEXTO CENTRADO -->
+<header class="hero-consejos" id="hero-consejos" role="banner">
+  <!-- Imagen principal desde img/img_consejos/ -->
+  <img src="../img/img_consejos/Inicio_1.png"
+       alt="Vista panorámica de Bacalar para Consejos y Recomendaciones"
+       class="hero-consejos-bg"
+       onerror="this.style.display='none';">
+
+  <!-- Capa oscura para contraste -->
+  <div class="hero-consejos-overlay"></div>
+
+  <!-- Barra de logos (Fuera del contenedor central para que se quede fija arriba a la izquierda) -->
+  <div class="hero-top-bar">
+    <div class="hero-brand-group">
+      <!-- Logo UPB -->
+      <img src="../img/branding/logo-upb.png" 
+           alt="Universidad Politécnica de Bacalar" 
+           class="hero-logo-upb"
+           width="110" 
+           height="100"
+           onerror="this.style.display='none';">
+
+      <!-- Divisor vertical (raya al centro) -->
+      <img src="../img/branding/line-separator.svg" 
+           alt="" 
+           class="hero-divider" 
+           aria-hidden="true"
+           width="12" 
+           height="60">
+
+      <!-- Logo Pueblo Mágico -->
+      <img src="../img/branding/logo-pueblo-magico.png" 
+           alt="Pueblo Mágico Bacalar" 
+           class="hero-logo-pm"
+           width="100" 
+           height="95"
+           onerror="this.style.display='none';">
+    </div>
+  </div>
+
+  <!-- Contenedor central exclusivamente para el Título -->
+  <div class="container hero-consejos-center text-center">
+    <h1 class="section-title title--light text-center" style="text-shadow: 2px 2px #000000;">Consejos y Recomendaciones</h1>
+  </div>
+</header>
+
+  <!-- SECCIÓN 2: NAVEGACIÓN SECUNDARIA -->
+
+  <nav class="secondary-nav-section" id="sec-nav" aria-label="Navegación secundaria de Bacalar">
+    <div class="container-bacalar secondary-nav-container">
+      <div class="secondary-nav-scroll-wrapper" tabindex="0" role="region" aria-label="Enlaces de navegación">
+        <ul class="secondary-nav-list" role="menubar">
+          <li class="secondary-nav-item" role="none">
+            <a href="../index.html" class="nav-link-sec" role="menuitem">Inicio</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="#recomendaciones-rapidas" class="nav-link-sec" role="menuitem">Recomendaciones</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="#emergencias" class="nav-link-sec" role="menuitem">Emergencias</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="#codigo-conducta" class="nav-link-sec" role="menuitem">Código de conducta</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="comunidades.html" class="nav-link-sec" role="menuitem">Comunidades</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="cultura-tradiciones.html" class="nav-link-sec" role="menuitem">Cultura y tradiciones</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="consejos-recomendaciones.html" class="nav-link-sec active" aria-current="page" role="menuitem">Consejos</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="gastronomia.html" class="nav-link-sec" role="menuitem">Gastronomía</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="actividades-recreativas.html" class="nav-link-sec" role="menuitem">Actividades recreativas</a>
+          </li>
+          <li class="secondary-nav-item" role="none">
+            <a href="compras-souvenirs.html" class="nav-link-sec" role="menuitem">Compras</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- SECCIÓN 3: 6 TARJETAS DE RECOMENDACIONES RÁPIDAS -->
+    <section class="tips-cards-section py-5" id="recomendaciones-rapidas" aria-label="Recomendaciones clave para viajar a Bacalar">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
+
+          <!-- Tarjeta 1 -->
+          <div class="col">
+            <article class="quick-tip-card h-100">
+              <div class="quick-tip-icon">
+                <i class="bi bi-car-front-fill" aria-hidden="true"></i>
+              </div>
+              <h2 class="quick-tip-title">Llegar es muy fácil</h2>
+              <p class="quick-tip-text">Autobús ADO desde Cancún o vuelo a Chetumal (a 30 min).</p>
+            </article>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="col">
+            <article class="quick-tip-card h-100">
+              <div class="quick-tip-icon">
+                <i class="bi bi-sun-fill" aria-hidden="true"></i>
+              </div>
+              <h2 class="quick-tip-title">Mejor clima</h2>
+              <p class="quick-tip-text">Enero a abril (buen tiempo y sin lluvias).</p>
+            </article>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="col">
+            <article class="quick-tip-card h-100">
+              <div class="quick-tip-icon">
+                <i class="bi bi-cloud-rain-fill" aria-hidden="true"></i>
+              </div>
+              <h2 class="quick-tip-title">Temporada de lluvias</h2>
+              <p class="quick-tip-text">Mayo a diciembre (prohibido protección solar, repercuta en la laguna).</p>
+            </article>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div class="col">
+            <article class="quick-tip-card h-100">
+              <div class="quick-tip-icon">
+                <i class="bi bi-bicycle" aria-hidden="true"></i>
+              </div>
+              <h2 class="quick-tip-title">Cómo moverse</h2>
+              <p class="quick-tip-text">Caminar, o renta bici, moto o auto para sitios lejanos.</p>
+            </article>
+          </div>
+
+          <!-- Tarjeta 5 -->
+          <div class="col">
+            <article class="quick-tip-card h-100">
+              <div class="quick-tip-icon">
+                <i class="bi bi-heart-fill" aria-hidden="true"></i>
+              </div>
+              <h2 class="quick-tip-title">Turismo Responsable</h2>
+              <p class="quick-tip-text">Usar ropa de manga larga con protección UV, no protector solar.</p>
+            </article>
+          </div>
+
+          <!-- Tarjeta 6 -->
+          <div class="col">
+            <article class="quick-tip-card h-100">
+              <div class="quick-tip-icon">
+                <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+              </div>
+              <h2 class="quick-tip-title">Alrededores</h2>
+              <p class="quick-tip-text">Visitar laguna y cenote Azul, Xul-Ha.</p>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: DIRECTORIO DE SERVICIO DE EMERGENCIA -->
+
+    <section class="emergency-section py-5" id="emergencias" aria-labelledby="emergencias-title">
+      <div class="container">
+        <h2 class="emergency-heading text-center mb-4" id="emergencias-title">
+          Directorio de Servicios de Emergencia
+        </h2>
+
+        <div class="emergency-list mx-auto">
+          <div class="emergency-row">
+            <span class="emergency-service">1.-Emergencias (General):</span>
+            <a href="tel:911" class="emergency-phone">911</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">2.-Oficina de Turismo:</span>
+            <a href="tel:9838342886" class="emergency-phone">(983) 834 2886</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">3.-Hospital:</span>
+            <a href="tel:9838342969" class="emergency-phone">(983) 834 2969</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">4.-Cruz Roja:</span>
+            <a href="tel:9838330223" class="emergency-phone">(983) 833 0223</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">5.-Centro Antiveneno:</span>
+            <a href="tel:9831344115" class="emergency-phone">(983) 134 4115</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">6.-Ángeles Verdes (Auxilio Vial):</span>
+            <a href="tel:078" class="emergency-phone">078</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">7.-Bomberos:</span>
+            <a href="tel:068" class="emergency-phone">068</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">8.-Reporte de Incendios:</span>
+            <a href="tel:8007370000" class="emergency-phone">800 737 0000</a>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-service">9.-Protección Canina:</span>
+            <a href="tel:9831557554" class="emergency-phone">(983) 155 7554</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: CÓDIGO DE CONDUCTA DEL VISITANTE -->
+
+    <section class="conduct-section py-5" id="codigo-conducta" aria-labelledby="conducta-title">
+      <div class="container">
+        <div class="conduct-frame">
+          <h2 class="conduct-heading text-center mb-4" id="conducta-title">
+            Código de Conducta del Visitante
+          </h2>
+
+          <div class="row g-3">
+            <!-- Columna Izquierda (Reglas 1 a 5) -->
+            <div class="col-lg-6 d-flex flex-column gap-3">
+
+              <!-- Regla 1 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-1.webp" alt="Prohibido arrojar basura" class="conduct-img">
+                </div>
+                <p class="conduct-text">1.-No arrojar basura, cenizas o colillas de cigarro.</p>
+              </article>
+              <!-- Fin Regla 1 -->
+
+              <!-- Regla 2 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-2.webp" alt="Prohibido tocar o cortar manglares" class="conduct-img">
+                </div>
+                <p class="conduct-text">2.-No tocar, cortar o anclarse a los manglares.</p>
+              </article>
+              <!-- Fin Regla 2 -->
+
+              <!-- Regla 3 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-3.webp" alt="Evitar ruidos y música con volumen alto" class="conduct-img">
+                </div>
+                <p class="conduct-text">3.-Evitar ruidos y música con volumen alto. Respetar el Santuario de Aves.</p>
+              </article>
+              <!-- Fin Regla 3 -->
+
+              <!-- Regla 4 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-4.webp" alt="No usar la laguna como baño" class="conduct-img">
+                </div>
+                <p class="conduct-text">4.-No usar la laguna como baño, ir antes o después de nadar.</p>
+              </article>
+              <!-- Fin Regla 4 -->
+
+              <!-- Regla 5 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                    <img src="../img/img_consejos/conducta-5.webp" alt="No tocar ni sacar el caracol chivita." class="conduct-img">
+                </div>
+                <p class="conduct-text">5.-No tocar ni sacar el caracol chivita.</p>
+              </article>
+              <!-- Fin Regla 5 -->
+
+            </div>
+
+            <!-- Columna Derecha (Reglas 6 a 9) -->
+            <div class="col-lg-6 d-flex flex-column gap-3">
+
+              <!-- Regla 6 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-6.webp" alt="Evitar la exfoliación con arena de la laguna" class="conduct-img">
+                </div>
+                <p class="conduct-text">6.-Evitar la exfoliación con arena de la laguna.</p>
+              </article>
+              <!-- Fin Regla 6 -->
+
+              <!-- Regla 7 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-7.webp" alt="Respetar boyas en zonas protegidas. No traspasarlas ni atarse." class="conduct-img">
+                </div>
+                <p class="conduct-text">7.-Respetar boyas en zonas protegidas. No traspasarlas ni atarse.</p>
+              </article>
+              <!-- Fin Regla 7 -->
+
+              <!-- Regla 8 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-8.webp" alt="No navegar, nadar o caminar entre los carrizos" class="conduct-img">
+                </div>
+                <p class="conduct-text">8.-No navegar, nadar o caminar entre los carrizos.</p>
+              </article>
+              <!-- Fin Regla 8 -->
+
+              <!-- Regla 9 -->
+              <article class="conduct-card">
+                <div class="conduct-icon-box">
+                  <img src="../img/img_consejos/conducta-9.webp" alt="No tocar, subirse o sentarse en los Estromatolitos. Mantener una distancia mínima de 3 metros" class="conduct-img">
+                </div>
+                <p class="conduct-text">9.-No tocar, subirse o sentarse en los Estromatolitos. Mantener una distancia mínima de 3 metros.</p>
+              </article>
+               <!-- Fin Regla 9 -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       SECCIÓN 6: FOOTER (Idéntico a Captura de pantalla 2026-11-15 143132.png)
+       ======================================================================== -->
+  <footer class="site-footer" id="footer" aria-labelledby="footer-brand">
+    <div class="section-shell">
+      <div class="footer-top">
+        <div class="footer-brand-block">
+          <p class="footer-brand" id="footer-brand">Bacalar</p>
+          <p class="footer-tagline">Pueblo Mágico</p>
+          <p class="footer-lema">Siete colores, una historia <span class="script-accent">viva</span>.</p>
+        </div>
+
+        <div class="footer-action">
+          <p class="footer-cta-text">Tu siguiente historia comienza frente a la laguna.</p>
+          <a href="../index.html" class="btn-bacalar btn-bacalar--light">
+            Descubrir Bacalar
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="footer-bottom">
+        <ul class="footer-social" aria-label="Redes sociales de Bacalar Tourism">
+          <li>
+            <a href="#" class="footer-social-link" aria-label="Instagram de Bacalar Tourism">
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-social-link" aria-label="X de Bacalar Tourism">
+              <i class="bi bi-twitter-x" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer-legal">
+          <p>© <span id="footer-year">2026</span> Bacalar Tourism. Proyecto realizado por estudiantes de la Universidad Politécnica de Bacalar.</p>
+          <p>Bacalar, Quintana Roo, México.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
