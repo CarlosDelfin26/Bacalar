@@ -68,3 +68,7 @@ Route::get('/img/{file}', function (string $file) {
     }
     abort(404);
 })->where('file', '.*');
+
+Route::get('/actividades-recreativas', function () {
+    return view('pages.actividades_recreativas.actividades-recreativas');
+})->name('actividades.recreativas');

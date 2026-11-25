@@ -13,10 +13,10 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- CSS del proyecto -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/pending.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="{{ asset('css/css_actividades_recreativas/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/css_actividades_recreativas/components.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/css_actividades_recreativas/pending.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/css_actividades_recreativas/responsive.css') }}">
 </head>
 <body>
     <!-- =====================================================

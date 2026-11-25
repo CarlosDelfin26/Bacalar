@@ -141,9 +141,7 @@
           <li class="secondary-nav-item" role="none">
             <a href="pages/gastronomia.html" class="nav-link-sec" role="menuitem">Gastronomía</a>
           </li>
-          <li class="secondary-nav-item" role="none">
-            <a href="pages/actividades-recreativas.html" class="nav-link-sec" role="menuitem">Actividades recreativas</a>
-          </li>
+          <a href="{{ route('actividades.recreativas') }}" class="nav-link-sec" role="menuitem">Actividades Recreativas</a>
           <li class="secondary-nav-item" role="none">
             <a href="pages/compras-souvenirs.html" class="nav-link-sec" role="menuitem" data-spy="experiencias">Compras</a>
           </li>
