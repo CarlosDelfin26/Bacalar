@@ -1,0 +1,132 @@
+/* ==========================================================================
+   BACALAR TOURISM — PENDING PAGES
+   Estilos mínimos para las páginas temporales del equipo.
+   No forma parte del diseño del Index.
+   ========================================================================== */
+
+.pending-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(72, 201, 176, 0.16), transparent 34%),
+    radial-gradient(circle at 82% 88%, rgba(42, 157, 206, 0.14), transparent 36%),
+    var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.pending-shell {
+  width: 100%;
+  max-width: 720px;
+}
+
+.pending-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pending-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.pending-brand:hover {
+  color: var(--color-accent-teal);
+}
+
+.pending-card {
+  padding: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.pending-kicker {
+  margin-bottom: 12px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent-teal);
+}
+
+.pending-card h1 {
+  margin-bottom: 18px;
+  color: var(--color-white);
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 8vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.pending-card p {
+  max-width: 56ch;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.pending-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: var(--radius-pill);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+}
+
+.pending-back:hover {
+  border-color: var(--color-accent-teal);
+  background-color: var(--color-accent-teal);
+  color: var(--color-primary-dark);
+}
+
+.pending-back:focus-visible,
+.pending-brand:focus-visible {
+  outline: 2px solid var(--color-accent-teal);
+  outline-offset: 4px;
+}
+
+.pending-note {
+  margin-top: 24px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 575.98px) {
+  .pending-page {
+    padding: 28px 16px;
+  }
+
+  .pending-card {
+    padding: 30px 24px;
+    border-radius: var(--radius-md);
+  }
+}
