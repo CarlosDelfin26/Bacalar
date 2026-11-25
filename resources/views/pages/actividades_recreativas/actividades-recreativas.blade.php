@@ -25,7 +25,7 @@
     <header class="hero-section" id="hero">
         <!-- Imagen de portada -->
         <div class="hero-media-container">
-            <img src="../img/hero/hero-bg-actividades-recreativas.webp" alt="Actividades recreativas en Bacalar" class="hero-bg-image">
+            <img src="{{ asset('img/imagens_actividades_recreativas/hero_A-R/hero-actividades-recreativas.webp') }}" alt="Actividades recreativas en Bacalar">
         </div>
         <!-- Capa oscura -->
         <div class="hero-overlay"></div>
@@ -106,7 +106,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tour-card">
                                 <div class="tour-image">
-                                    <img src="../img/cart_actividades-recreativas/Cart-1.webp" alt="Paseo en lancha por la Laguna de Bacalar">
+                                    <img src="{{ asset('img/imagens_actividades_recreativas/cart_A-R/Cart-1.webp') }}" alt="Actividad recreativa">
                                 </div>
                                 <div class="tour-content">
                                     <h2 class="tour-title">Paseos en lancha</h2>
@@ -120,7 +120,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tour-card">
                                 <div class="tour-image">
-                                    <img src="../img/cart_actividades-recreativas/Cart-2.webp" alt="Actividad recreativa en Bacalar">
+                                    <img src="{{ asset('img/imagens_actividades_recreativas/cart_A-R/Cart-2.webp') }}" alt="Actividad recreativa">
                                 </div>
                                 <div class="tour-content">
                                     <h2 class="tour-title">Kayak</h2>
@@ -134,7 +134,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tour-card">
                                 <div class="tour-image">
-                                    <img src="../img/cart_actividades-recreativas/Cart-3.webp" alt="Actividad recreativa en Bacalar">
+                                    <img src="{{ asset('img/imagens_actividades_recreativas/cart_A-R/Cart-3.webp') }}" alt="Actividad recreativa">
                                 </div>
                                 <div class="tour-content">
                                     <h2 class="tour-title">Paddleboard</h2>
@@ -148,7 +148,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tour-card">
                                 <div class="tour-image">
-                                    <img src="../img/cart_actividades-recreativas/Cart-4.webp" alt="Actividad recreativa en Bacalar">
+                                    <img src="{{ asset('img/imagens_actividades_recreativas/cart_A-R/Cart-4.webp') }}" alt="Actividad recreativa">
                                 </div>
                                 <div class="tour-content">
                                     <h2 class="tour-title">Ciclismo</h2>
@@ -162,7 +162,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tour-card">
                                 <div class="tour-image">
-                                    <img src="../img/cart_actividades-recreativas/Cart-5.webp" alt="Actividad recreativa en Bacalar">
+                                    <img src="{{ asset('img/imagens_actividades_recreativas/cart_A-R/Cart-5.webp') }}" alt="Actividad recreativa">
                                 </div>
                                 <div class="tour-content">
                                     <h2 class="tour-title">Paseos en velero</h2>
@@ -176,8 +176,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="tour-card">
                                 <div class="tour-image">
-                                    <img src="../img/cart_actividades-recreativas/Cart-6.webp"
-                                        alt="Actividad recreativa en Bacalar">
+                                    <img src="{{ asset('img/imagens_actividades_recreativas/cart_A-R/Cart-6.webp') }}" alt="Actividad recreativa">
                                 </div>
                                 <div class="tour-content">
                                     <h2 class="tour-title">Jet ski</h2>

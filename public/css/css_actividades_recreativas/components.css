@@ -1678,250 +1678,228 @@ a.guide-banner:focus-visible {
 /* --------------------------------------------------------------------------
   Cart de actividades recreativas
 -------------------------------------------------------------------------- */
-/* ==========================================================
-   TARJETAS DE ACTIVIDADES - ESTILO AGUAS ABIERTAS
-   ========================================================== */
+/* =========================================
+  TARJETAS DE ACTIVIDADES RECREATIVAS
+========================================= */
 
 .tour-card {
-    position: relative;
-    width: 100%;
-    height: 520px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    border-radius: 28px;
-    background: #062b3c;
-    box-shadow: 0 12px 35px rgba(6, 43, 60, 0.18);
-    isolation: isolate;
-    cursor: pointer;
 }
 
-/* ----------------------------------------------------------
-   IMAGEN
----------------------------------------------------------- */
-
+/* Imagen de la tarjeta */
 .tour-image {
-    position: absolute;
-    inset: 0;
     width: 100%;
-    height: 100%;
+    height: 230px;
     overflow: hidden;
-    z-index: 0;
 }
 
 .tour-image img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-    object-position: center;
-    transition: transform 0.8s ease;
 }
 
-/* Zoom suave al pasar el mouse */
-
-.tour-card:hover .tour-image img {
-    transform: scale(1.06);
-}
-
-
-/* ----------------------------------------------------------
-   DEGRADADO SOBRE LA IMAGEN
----------------------------------------------------------- */
-
-.tour-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 35%,
-        rgba(0, 0, 0, 0.08) 48%,
-        rgba(0, 0, 0, 0.45) 68%,
-        rgba(0, 0, 0, 0.88) 100%
-    );
-
-    pointer-events: none;
-}
-
-
-/* ----------------------------------------------------------
-   CONTENIDO SOBRE LA IMAGEN
----------------------------------------------------------- */
-
+/* Contenido de la tarjeta */
 .tour-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    z-index: 2;
-
-    min-height: auto;
-    padding: 35px 28px 30px;
-
-    background: transparent;
-    color: #fff;
-
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    flex-grow: 1;
+
+    padding: 24px 65px 24px 24px;
+
+    min-height: 180px;
 }
 
-
-/* ----------------------------------------------------------
-   TÍTULO
----------------------------------------------------------- */
-
+/* Título */
 .tour-title {
-    margin: 0 0 8px;
-
-    font-family: "Cormorant Garamond", Georgia, serif;
-
-    font-size: 32px;
-    font-weight: 500;
-    font-style: italic;
-
-    line-height: 1.05;
-    letter-spacing: 0.02em;
-
-    color: #fff;
-
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    margin-bottom: 12px;
+    line-height: 1.2;
+    overflow-wrap: break-word;
 }
 
-
-/* ----------------------------------------------------------
-   DESCRIPCIÓN
----------------------------------------------------------- */
-
+/* Descripción */
 .tour-description {
-    max-width: 90%;
-
     margin: 0;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    word-break: normal;
 
-    font-family: "Inter", Arial, sans-serif;
-
-    font-size: 14px;
-    font-weight: 500;
-
-    line-height: 1.5;
-
-    color: rgba(255, 255, 255, 0.92);
-
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    /* Evita que el texto llegue al botón */
+    padding-right: 5px;
 }
 
-
-/* ----------------------------------------------------------
-   BOTÓN CIRCULAR
----------------------------------------------------------- */
-
+/* Botón de abrir modal */
 .tour-button {
     position: absolute;
 
-    right: 22px;
-    bottom: 25px;
+    right: 18px;
+    bottom: 20px;
 
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    border: none;
     border-radius: 50%;
 
-    background: rgba(255, 255, 255, 0.12);
+    background-color: #B8DFF2;
+    color: #062B50;
 
-    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
 
-    font-size: 23px;
-    line-height: 1;
-
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease,
-        border-color 0.3s ease;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .tour-button:hover {
-    background: #fff;
-    border-color: #fff;
-
-    color: #062b3c;
-
+    background-color: #087EAD;
+    color: #FFFFFF;
     transform: translateY(-3px);
 }
 
+/* Ajustes para móviles */
+@media (max-width: 576px) {
+    .tour-image {
+        height: 210px;
+    }
 
-/* ----------------------------------------------------------
-   EFECTO GENERAL DE LA TARJETA
----------------------------------------------------------- */
-
-.tour-card:hover {
-    box-shadow: 0 18px 45px rgba(6, 43, 60, 0.28);
-}
-
-
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
-
-@media (max-width: 991px) {
-
-    .tour-card {
-        height: 500px;
+    .tour-content {
+        padding: 20px 65px 24px 20px;
+        min-height: 170px;
     }
 
     .tour-title {
-        font-size: 30px;
+        font-size: 21px;
     }
 
     .tour-description {
         font-size: 14px;
     }
+
+    .tour-button {
+        right: 15px;
+        bottom: 18px;
+    }
 }
 
+/* TARJETA PRINCIPAL */
+.tour-card {
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
 
+/* IMAGEN */
+.tour-image {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.tour-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* EFECTO DE IMAGEN */
+.tour-card:hover .tour-image img {
+    transform: scale(1.04);
+}
+
+/* CONTENIDO */
+.tour-content {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: 24px 18px 35px;
+    min-height: 175px;
+    position: relative;
+}
+
+/* TÍTULO */
+.tour-title {
+    font-family: var(--font-serif);
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+    color: var(--color-white);
+}
+
+/* DESCRIPCIÓN */
+.tour-description {
+    font-family: var(--font-body);
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--color-ice-blue);
+    margin: 0;
+    max-width: 90%;
+}
+
+/* BOTÓN CIRCULAR */
+.tour-button {
+    position: absolute;
+    right: 14px;
+    bottom: 18px;
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.13);
+    color: var(--color-white);
+    font-size: 29px;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.tour-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
 @media (max-width: 576px) {
 
-    .tour-card {
-        height: 470px;
-        border-radius: 24px;
-    }
-
-    .tour-content {
-        padding: 28px 22px 25px;
+    .tour-image {
+        height: 420px;
     }
 
     .tour-title {
-        font-size: 28px;
+        font-size: 22px;
+        margin-bottom: 28px;
     }
 
     .tour-description {
-        max-width: 82%;
-        font-size: 13px;
+        font-size: 17px;
     }
 
-    .tour-button {
-        right: 18px;
-        bottom: 22px;
-
-        width: 44px;
-        height: 44px;
-
-        font-size: 21px;
+    .tour-content {
+        padding: 22px 15px 35px;
     }
+
 }
+
 /* =================================
   MODALES DE ACTIVIDADES TURÍSTICAS
 ================================= */
+
 .modal-turistico-dialog {
     max-width: 1150px;
     width: calc(100% - 40px);
@@ -1932,34 +1910,48 @@ a.guide-banner:focus-visible {
     border: none;
     border-radius: 18px;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
+    background-color: #062341;
+
+    background-size: 60% 100%;
+    background-position: right center;
     background-repeat: no-repeat;
 }
 
 /* Imagen diferente para cada modal */
 .modal-fondo-1 {
-    background-image: linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)), url("../img/cart_actividades-recreativas/Cart-1.webp");
+    background-image:
+        linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)),
+        url("../../img/imagens_actividades_recreativas/cart_A-R/Cart-1.webp");
 }
 
 .modal-fondo-2 {
-    background-image: linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)), url("../img/cart_actividades-recreativas/Cart-2.webp");
+    background-image:
+        linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)),
+        url("../../img/imagens_actividades_recreativas/cart_A-R/Cart-2.webp");
 }
 
 .modal-fondo-3 {
-    background-image: linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)), url("../img/cart_actividades-recreativas/Cart-3.webp");
+    background-image:
+        linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)),
+        url("../../img/imagens_actividades_recreativas/cart_A-R/Cart-3.webp");
 }
 
 .modal-fondo-4 {
-    background-image: linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)), url("../img/cart_actividades-recreativas/Cart-4.webp");
+    background-image:
+        linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)),
+        url("../../img/imagens_actividades_recreativas/cart_A-R/Cart-4.webp");
 }
 
 .modal-fondo-5 {
-    background-image: linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)), url("../img/cart_actividades-recreativas/Cart-5.webp");
+    background-image:
+        linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)),
+        url("../../img/imagens_actividades_recreativas/cart_A-R/Cart-5.webp");
 }
 
 .modal-fondo-6 {
-    background-image: linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)), url("../img/cart_actividades-recreativas/Cart-6.webp");
+    background-image:
+        linear-gradient(90deg, rgba(6, 35, 65, .97), rgba(6, 35, 65, .75) 48%, rgba(6, 35, 65, .15)),
+        url("../../img/imagens_actividades_recreativas/cart_A-R/Cart-6.webp");
 }
 
 .modal-turistico-contenido {
